@@ -17,4 +17,7 @@ export default class Firebase {
     Firebase.auth = firebase.auth();
     Firebase.firestore = firebase.firestore();
   }
+  static getDb(){
+    return Firebase.firestore;
+  }
 }
